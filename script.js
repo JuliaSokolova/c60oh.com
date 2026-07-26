@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const status = document.getElementById("form-status");
   const submitButton = document.getElementById("submit-button");
 
-  if (!form) return;
+  if (!form || !status || !submitButton) {
+      console.error("Form elements are missing.");
+      return;
+    };
 
   form.addEventListener("submit", async function (event) {
 
@@ -62,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } finally {
 
       submitButton.disabled = false;
-      submitButton.textContent = "Request Sample Access";
+      submitButton.textContent = "Request Early Access";
 
     }
 
