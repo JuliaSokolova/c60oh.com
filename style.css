@@ -238,65 +238,50 @@ button,input,select,textarea{font:inherit}
   grid-template-columns:repeat(4,1fr);
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
-  background:#fff
+  background:#fff;
 }
+
 .property-card{
   min-height:195px;
   padding:26px 28px;
   border-right:1px solid var(--line);
   background:#fff;
   text-align:center;
-  transition:.2s ease
+  transition:.2s ease;
 }
-.property-card:last-child{border-right:0}
+
+.property-card:last-child{
+  border-right:0;
+}
+
 .property-card:hover{
   background:var(--soft);
-  transform:translateY(-2px)
+  transform:translateY(-2px);
 }
-.card-index{display:none}
+
+.card-index{
+  display:none;
+}
+
+.feature-icon{
+  width:48px;
+  height:48px;
+  display:block;
+  object-fit:contain;
+  margin:0 auto 14px;
+}
+
 .property-card h3{
   font-size:16px;
-  margin:12px 0 8px;
-  line-height:1.25
+  margin:0 0 8px;
+  line-height:1.25;
 }
+
 .property-card p:last-child{
   font-size:13px;
   color:var(--muted);
   max-width:220px;
-  margin:0 auto
-}
-.line-icon{
-  width:48px;
-  height:48px;
-  position:relative;
-  margin:0 auto
-}
-.line-icon:before,.line-icon:after{content:"";position:absolute}
-.droplet:before{
-  width:25px;height:34px;border:2px solid var(--blue);
-  border-radius:55% 45% 52% 48%;
-  transform:rotate(45deg);left:10px;top:5px
-}
-.layers:before{
-  width:31px;height:21px;border:2px solid var(--blue);
-  transform:skewY(-25deg);left:6px;top:8px;
-  box-shadow:7px 7px 0 -1px #fff,7px 7px 0 1px var(--blue),
-             14px 14px 0 -1px #fff,14px 14px 0 1px var(--blue)
-}
-.cycle:before{
-  width:36px;height:36px;border:2px solid var(--blue);
-  border-left-color:transparent;border-radius:50%;left:5px;top:4px
-}
-.cycle:after{
-  border-left:7px solid var(--blue);
-  border-top:5px solid transparent;
-  border-bottom:5px solid transparent;
-  left:2px;top:10px;transform:rotate(-30deg)
-}
-.molecule:before{
-  width:39px;height:33px;left:4px;top:5px;
-  border:2px solid var(--blue);
-  clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%)
+  margin:0 auto;
 }
 
 /* EVIDENCE / SCIENCE */
