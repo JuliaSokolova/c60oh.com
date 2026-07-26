@@ -246,7 +246,12 @@ Fullerene-derived chemistry enables unique self-assembly and material behavior.
           </ul>
         </div>
 
-        <form class="access-form" id="access-form">
+        <form
+            class="access-form"
+            id="access-form"
+            action="https://formspree.io/f/xqerweqb"
+            method="POST"
+          >
           <div class="form-heading">
             <h3>Request Early Access</h3>
             <p>Tell us what you are exploring. We will follow up directly.</p>
@@ -272,7 +277,25 @@ Fullerene-derived chemistry enables unique self-assembly and material behavior.
           <label>What are you exploring?
             <textarea name="message" rows="4" placeholder="Briefly describe your application, research question or partnership idea."></textarea>
           </label>
+          <div class="form-honeypot" aria-hidden="true">
+            <label>
+              
+              <input
+                type="text"
+                name="_gotcha"
+                tabindex="-1"
+                autocomplete="off"
+              >
+            </label>
+          </div>
           <button class="button primary form-button" type="submit">Prepare Inquiry</button>
+          <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite">
+            
+            </p>
           <p class="form-note">Submitting opens a pre-addressed email so no information is stored on this site.</p>
         </form>
       </div>
