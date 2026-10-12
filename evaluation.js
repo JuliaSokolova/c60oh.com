@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
       status.classList.add("error");
     } finally {
       submitButton.disabled = false;
-      submitButton.textContent = "Submit Request";
+      submitButton.textContent = "Submit Sample Request";
     }
   });
 });
