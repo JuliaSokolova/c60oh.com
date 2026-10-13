@@ -9,3 +9,6 @@
 .contact-location a:hover,.contact-email a:hover{text-decoration:underline}
 .contact-email{margin:45px 0 0;font-size:17px}
 @media(max-width:700px){.contact-main{padding:62px 0 75px}.contact-grid{grid-template-columns:1fr;gap:32px}}
+
+/* Current page indicator in the footer */
+body.homepage-v2 .footer a.active{color:#8bd4ff;font-weight:700;text-decoration:underline;text-underline-offset:5px}
